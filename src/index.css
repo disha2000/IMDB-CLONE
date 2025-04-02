@@ -1,0 +1,133 @@
+/* Ensure all elements use border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  font-family: "Recursive", sans-serif;
+  font-size: 14px;
+}
+
+.main-section {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.home-section,
+.register-section,
+.login-section {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  padding: 0 5%;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  position: fixed;
+  background-color: black;
+  z-index: 20;
+  box-shadow: 0px 5px 5px rgb(27, 26, 26);
+  padding: 0 5%;
+  width: 100%;
+  /* Fix width */
+}
+
+.header-section .nav-items {
+  margin-left: auto;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-items a {
+  margin-right: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.home-section,
+.register-section,
+.login-section {
+  margin-top: 77px !important;
+  min-height: 100vh;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px;
+}
+
+.logo {
+  width: 90px;
+  height: 40px;
+}
+
+.sign-in-button {
+  display: inline-block;
+  background-color: #f5c518;
+  color: black;
+  font-size: 1em;
+  padding: 10px 12px;
+  font-weight: 600;
+  border: none;
+}
+
+.copyright-text {
+  color: gray;
+}
+
+.register-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.register-form {
+  max-width: 500px;
+  width: 60%;
+  padding: 1em;
+  margin: 4em auto;
+  border: 1px solid gray;
+}
+
+.register-form div {
+  margin: 20px 0px;
+}
+
+.register-form form label {
+  font-weight: 600;
+  display: block;
+  width: 100%;
+}
+
+.register-form form input {
+  width: 100%;
+}
+
+.register-form form input {
+  padding: 8px 10px;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+
+.hint {
+  font-weight: 300;
+  font-size: x-small;
+}
